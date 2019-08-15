@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8CC73F"
+            app:title="GO-JEK"></androidx.appcompat.widget.Toolbar>
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_below="@id/toolbar">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="241dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/logo_hitam"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.077" />
+
+        <ImageView
+            android:id="@+id/btnB"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/menu_goride"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toEndOf="@+id/btnA"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.164" />
+
+        <ImageView
+            android:id="@+id/btnA"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/menu_gomart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.243"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.164" />
+
+        <ImageView
+            android:id="@+id/btnGoFood"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/menu_gofood"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnA"
+            app:layout_constraintVertical_bias="0.017" />
+
+        <ImageView
+            android:id="@+id/btnD"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/menu_gosend"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toEndOf="@+id/btnGoFood"
+            app:layout_constraintTop_toBottomOf="@+id/btnB"
+            app:layout_constraintVertical_bias="0.051" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Go-Mart"
+            app:layout_constraintEnd_toEndOf="@+id/btnA"
+            app:layout_constraintStart_toStartOf="@+id/btnA"
+            app:layout_constraintTop_toBottomOf="@+id/btnA" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Go-Ride"
+            app:layout_constraintEnd_toEndOf="@+id/btnB"
+            app:layout_constraintStart_toStartOf="@+id/btnB"
+            app:layout_constraintTop_toBottomOf="@+id/btnB" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Go-Food"
+            app:layout_constraintEnd_toEndOf="@+id/btnGoFood"
+            app:layout_constraintStart_toStartOf="@+id/btnGoFood"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoFood" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Go-Send"
+            app:layout_constraintEnd_toEndOf="@+id/btnD"
+            app:layout_constraintStart_toStartOf="@+id/btnD"
+            app:layout_constraintTop_toBottomOf="@+id/btnD" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
